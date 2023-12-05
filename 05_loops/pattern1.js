@@ -8,9 +8,14 @@
 // ****
 // *****    
 
-for(let i = 1; i<=5; i++){
+
+const prompt = require('prompt-sync')()
+
+let n = parseInt(prompt('enter n:'))
+
+for(let i = 0; i<n; i++){
     let string =""
-    for(let j=1; j<=i; j++){
+    for(let j=0; j<=i; j++){
         string += "*"
     }
     console.log(`${string}`);
